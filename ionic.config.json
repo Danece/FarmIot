@@ -1,0 +1,7 @@
+{
+  "name": "farmIOT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
