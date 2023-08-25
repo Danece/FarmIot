@@ -1,0 +1,53 @@
+.tableDiv {
+    margin: 50px 20px;
+}
+
+ion-col {
+    background-color: #1ca696;
+    border: solid 1px #135d54;
+    color: #fff;
+    text-align: center;
+    --ion-grid-column-padding: 5px;
+}
+
+ion-row:nth-child(n + 3) ion-col {
+    background-color: #ffffff;
+    border: solid 1px #135d54;
+    color: #000000;
+    text-align: center;
+}
+
+ion-toggle {
+    padding: 12px;
+  
+    --track-background: #ddd;
+    --track-background-checked: #ddd;
+  
+    --handle-background: #eb7769;
+    --handle-background-checked: #95c34e;
+  
+    --handle-width: 25px;
+    --handle-height: 27px;
+    --handle-max-height: auto;
+    --handle-spacing: 6px;
+  
+    --handle-border-radius: 4px;
+    --handle-box-shadow: none;
+  }
+  
+  ion-toggle::part(track) {
+    height: 10px;
+    width: 65px;
+  
+    /* Required for iOS handle to overflow the height of the track */
+    overflow: visible;
+  }
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.content {
+    font-size: 22px;
+}

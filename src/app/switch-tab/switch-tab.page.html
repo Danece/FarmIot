@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>控制器開關</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">switchTab</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="tableDiv">
+    <ion-grid>
+      <ion-row>
+        <ion-col><label class="title">控制器:Control_01</label></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><label class="title">裝置名稱</label></ion-col>
+        <ion-col><label class="title">狀態</label></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><label class="content">風扇</label></ion-col>
+        <ion-col>
+          <ion-toggle checked={{fanRelayChecked}} aria-label="Enable Notifications" (ionChange)="onChange('fan');" ></ion-toggle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
